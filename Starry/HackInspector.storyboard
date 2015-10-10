@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lrn-cL-usF">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hack Inspector View Controller-->
+        <scene sceneID="Oix-0T-Ve0">
+            <objects>
+                <viewController id="lrn-cL-usF" customClass="HackInspectorViewController" customModule="Starry" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PNN-AV-f3P"/>
+                        <viewControllerLayoutGuide type="bottom" id="K5h-xT-wjn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bet-AE-vD5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qm1-Jx-XYm" customClass="StarView" customModule="Starry" customModuleProvider="target">
+                                <rect key="frame" x="20" y="268" width="560" height="64"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="1" green="0.85901832580566406" blue="0.29183807969093323" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="jjB-Pl-Fa1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qm1-Jx-XYm" firstAttribute="centerY" secondItem="bet-AE-vD5" secondAttribute="centerY" id="B6p-st-e2h"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qm1-Jx-XYm" secondAttribute="trailing" id="O3A-2r-CLc"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="qm1-Jx-XYm" secondAttribute="leading" id="aoM-5v-JSL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="starView" destination="qm1-Jx-XYm" id="MuT-zF-HF2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DQ2-hI-XxK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="577" y="562"/>
+        </scene>
+    </scenes>
+</document>
